@@ -7,4 +7,8 @@ class Studio < Apartment
     
     super
   end
+
+  def self.all(filename)
+    Parseable.load_studios(filename)
+  end
 end
